@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'VCR';
+  src: url(vcr.ttf);
+}
+
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+div.testcard {
+  background: url('pattern.png');
+  background-size: cover;
+  
+  /* Landscape. */
+  width: 100vw;
+  height: 56.24vw;
+  
+  /* Portrait. */
+  max-width: 177.778vh;
+  max-height: 100vh;
+  
+  /* Positioning. */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+div.inner {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.time-container {
+  position: absolute;
+  left: 50%;
+  width: 18%;
+  transform: translateX(-50%);
+  top: 73.5%;
+  height: 6%;
+}
+
+.clock {
+  font-family: 'VCR', Monaco, Gulim, Consolas, monospace;
+  -webkit-font-smoothing: none;
+  text-align: center;
+}
