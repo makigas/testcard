@@ -10,23 +10,29 @@ the public website.
 
 ## Usage
 
-The most basic form is just accessing the index.html file.
-
-However, by using the `banner` param in the URL querystring a fixed test can be displayed on the top
+The most basic form is just accessing the index.html file. However, by using the
+`banner` param in the URL querystring a fixed text can be displayed on the top
 half of the screen. Example:
 
 ![Test card with a parameter](doc/banner.png)
 
 ## Using with OBS
 
-Install Browsersource:
+You can attach webpages as sources in OBS livestreams by installing the
+Browsersource plugin. Please, download the plugin for your platform first:
 
-* CLR Browsersource for OBS for Windows: https://obsproject.com/forum/resources/clr-browser-source-plugin.22/
-* Browser Plugin for OBS Multiplatform: https://obsproject.com/forum/resources/browser-plugin.115/
+* [CLR Browsersource for OBS for Windows][bswin].
+* [Browser Plugin for OBS Multiplatform][bsobs].
 
-Add the public page as the website to display.
+Add the public page as the website to display. Make sure the testcard fills
+the entire screen. Set the URL to the testcard one, change the `banner` param
+if you want; now you are ready to rock.
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-See LICENSE.txt for the full contents of the license.
+The theme is available as open source under the terms of the
+[MIT License](http://opensource.org/licenses/MIT). See LICENSE.txt for the
+full contents of the license.
+
+[bswin]: https://obsproject.com/forum/resources/clr-browser-source-plugin.22/
+[bsobs]: https://obsproject.com/forum/resources/browser-plugin.115/
