@@ -1,0 +1,99 @@
+/**
+ * This file is part of the makigas testcard - www.github.com/makigas/testcard
+ * Copyright (C) 2016-2017 Dani Rodríguez <danirod@outlook.com>
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+@font-face {
+  font-family: 'VCR';
+  src: url(vcr.ttf);
+}
+
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'VCR', monospace;
+  font-size: 8vh;
+}
+
+@media all and (max-width: 640px) {
+  body { font-size: 6vh; }
+}
+
+@media all and (orientation: portrait) {
+  body { font-size: 4vh; }
+}
+
+div.testcard {
+  background: url('bars.png');
+  background-size: cover;
+  
+  /* Landscape. */
+  width: 100vw;
+  height: 56.24vw;
+  
+  /* Portrait. */
+  max-width: 177.778vh;
+  max-height: 100vh;
+  
+  /* Positioning. */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+div.inner {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+p {
+  background: black;
+  color: white;
+  padding: 2vh 4vh;
+  display: inline-block;
+  cursor: default;
+}
+
+#banner {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#date {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+#time {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
